@@ -14,6 +14,47 @@
     row-gap: .5rem;
 }
 
+/* DESTAQUES */
+.destaques {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.destaques__barra {
+    flex-grow: 1;
+}
+
+/* PROXIMOS EVENTOS */
+.eventos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+.eventos__item {
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+/* AGENDA */
+.agenda__lista {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+    justify-content: center;
+}
+
+.agenda__item {
+    flex-grow: 1;
+}
+
+/* RODAPE */
+
+
 @media (min-width: 720px) {
     /* CABEÇALHO */
     .menu {
@@ -25,6 +66,11 @@
         flex-wrap: wrap;
         column-gap: 1.5rem;
         row-gap: 1rem;
+    }
+
+    /* PROXIMOS EVENTOS */
+    .eventos__lista {
+        justify-content: end;
     }
 }
 
